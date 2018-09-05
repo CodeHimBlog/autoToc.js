@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+
+<title>Auto Table of Contents in jQuery </title>
+
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--autoToc.js-->
+<script src="js/autoToc.js"></script>
+
+<script>
+$(document).ready(function(){
+   //selector, where to add table of contents
+   $(".at").autoToc();
+});
+
+</script>
+
+
+<style>
+/* autoToc CSS */
+*{ margin: 0; padding: 0}
+.auto-toc {
+   background: #f2f2f2;
+   padding: 15px;
+   margin: 15px;
+   border-radius: 4px;
+
+}
+.auto-toc ol{
+   padding: 10px;
+   
+
+}
+.auto-toc ol li{
+   margin-left: 10px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+.auto-toc ol li a{
+   text-decoration: none;
+   color: #348781;
+   display: block;
+   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+   padding: 10px;
+ 
+}
+.auto-toc ol li a:hover{
+   background: rgba(0, 0, 0, 0.095);
+
+}
+
+.auto-toc h4 {
+    font-size: 15pt;
+    text-align: center;
+    
+}
+
+/* Demo only CSS*/
+main{
+       width: 100%;
+       padding: 10px;
+       box-sizing: border-box;
+    }
+h1 {  
+    text-align: center;
+    font-size: 16pt;
+    color: #444;
+    
+
+}
+p{ margin: 10px;
+    color: #333;
+     line-height: 1.4;
+     font-size: 15px;
+    }
+ul { margin-left: 50px;
+
+}
+h1, h2, pre, p{
+   padding: 10px; 
+  
+}
+ul li{ padding: 10px 0 0 0px; 
+
+}
+pre{
+   margin: 30px;
+   background: #f2f2f2;
+   color: #000;
+
+}
+@media only screen and (min-width: 480px){
+    main{
+       max-width: 620px;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: 2px 2px rgba(0, 0, 0, .3);
+
+        }
+
+}
+
+</style>
+</head>
+<body>
+
+<main>
+<article>
+<h1> Table of Contents Generator </h1>
+
+<p> A simple jQuery plug-in to  automatically generate table of contents (based on h2 headings available in article tag) of the HTML document.  
+<br /> <br />
+ <b><i>Following is the demo of this plug-in. </i></b> </p>
+
+<div class="at"></div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7782420780"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h2> Features of autoToc.js   </h2>
+
+<p>Following are the some basic features of this plug-in. </p>
+<ul>
+<li>Smooth scrolling between sections.</li>
+<li> Fully customizable with CSS. </li>
+<li>Lite weight file size.</li>
+<li>Simple and clean logic. </li>
+<li>User friendly and Easy to implement.</li>
+</ul>
+
+
+<h2>How to Use </h2>
+
+<p> Just call the autoToc() in your jQuery code, use the HTML selector, where <q>Table of Contents</q> to be inserted. For example, if you want to append this TOC in the beginning of your article, the statement will be: </p>
+    <center>
+      <pre> $("article").autoToc(); </pre>
+    </center>
+
+<p>
+Similarly, you can insert this autoToc anywhere, i.e in the sidebar , or your desired location.  <br />
+<strong>No need any extra tag, coding or anything more... </strong>
+</p>
+
+
+
+<h2> Simple and clean logic.  </h2>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<h2>  Easy to Implement</h2>
+
+<p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+</p>
+
+<h2> Powerful and Efficient </h2>
+
+<p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+</p>
+
+<h2> Lite-weight,  easy to install </h2>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+
+</article>
+
+</main>
+</body>
+</html>
